@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- ... -->
+  </head>
+  <body>
+    <nav>
+      <div class="flex justify-between items-center w-full md:justify-center">
+        <div class="md:hidden">
+          <i class="fas fa-bars text-gray-900 text-2xl p-4"></i>
+        </div>
+        <h1 class="text-4xl font-extrabold italic text-right p-2 md:mx-4">
+          zomato
+        </h1>
+
+        <div class="hidden md:flex">
+          <div class="container h-2 flex justify-center items-center">
+            <div class="relative">
+              <div class="absolute top-3 left-3">
+                <i class="fas fa-map-marker-alt text-red-400 text-xl"></i>
+              </div>
+              <input
+                type="text"
+                class="
+                  h-10
+                  w-48
+                  px-8
+                  rounded-l-lg
+                  focus:shadow
+                  focus:outline-none
+                  border-r-2 border-gray-300
+                  shadow-md
+                "
+                placeholder="Mumbai"
+              />
+            </div>
+          </div>
+
+          <div class="container h-2 flex justify-center items-center">
+            <div class="relative">
+              <input
+                type="text"
+                class="
+                  h-10
+                  w-96
+                  pr-8
+                  pl-5
+                  rounded-r-lg
+                  z-0
+                  focus:shadow
+                  focus:outline-none
+                  shadow-md
+                "
+                placeholder="Search anything..."
+              />
+              <div class="absolute top-2 right-3">
+                <i
+                  class="fa fa-search text-gray-400 z-20 hover:text-gray-500"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ml-12 hidden md:flex">
+          <h1 class="text-lg font-light px-2 cursor-pointer">Log in</h1>
+          <h1 class="text-lg font-light px-2 cursor-pointer">Sign up</h1>
+        </div>
+      </div>
+      <div class="my-6 px-5 text-sm">
+        <span class="text-gray-400">Home /</span>
+        <span class="text-gray-400">India /</span>
+        <span class="text-gray-300">Mumbai Restaurants</span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="flex justify-start mx-4 truncate md:justify-center">
+        <!--left side --->
+        <div
+          class="
+            flex
+            justify-center
+            items-center
+            text-red-400
+            border-b-2 border-red-400
+            pb-2
+          "
+        >
+          <i
+            class="
+              fas
+              fa-motorcycle
+              text-3xl
+              border
+              rounded-full
+              p-3
+              bg-yellow-100
+            "
+          ></i>
+          <span class="text-2xl p-2"> Delivery</span>
+        </div>
+
+        <!--right side -->
+        <div
+          class="
+            flex flex-nowrap
+            justify-center
+            items-center
+            mx-3
+            text-gray-500
+          "
+        >
+          <i class="fas fa-utensils-alt rounded-full p-3 text-3xl"></i>
+          <div class="text-2xl p-2">Dining Out</div>
+        </div>
+
+        <div
+          class="
+            flex flex-nowrap
+            justify-center
+            items-center
+            mx-3
+            text-gray-500
+          "
+        >
+          <i class="fas fa-wine-glass-alt rounded-full p-3 text-3xl"></i>
+          <div class="text-2xl p-2">Night Life</div>
+        </div>
+
+        <div
+          class="
+            flex flex-nowrap
+            justify-center
+            items-center
+            mx-3
+            text-gray-500
+          "
+        >
+          <i class="fas fa-pump-medical rounded-full p-3 text-3xl"></i>
+          <span class="text-2xl p-2">Nutrition</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap m-4 text-gray-400 font-light">
+        <span class="border-2 border-gray-200 px-6 py-1 rounded m-2"
+          >Filters</span
+        >
+        <span class="border-2 border-gray-200 px-6 py-1 rounded m-2"
+          >Ratings</span
+        >
+        <span class="border-2 border-gray-200 px-6 py-1 rounded m-2"
+          >Safe and Hygienic</span
+        >
+        <span class="border-2 border-gray-200 px-6 py-1 rounded m-2"
+          >Pure Veg</span
+        >
+        <span class="border-2 border-gray-200 px-6 py-1 rounded m-2"
+          >Delivery time</span
+        >
+      </div>
+    </main>
+
+    <div>
+      <h1 class="text-3xl p-4">Inspiration for your first order</h1>
+      <div class="flex flex-nowrap overflow-x-auto mx-10">
+        <img
+          src="https://source.unsplash.com/a66sGfOnnqQ"
+          class="object-contain h-52 w-full p-1 rounded-2xl"
+        />
+        <img
+          src="https://source.unsplash.com/OvNsLemoVEw"
+          class="object-contain h-52 w-full p-1 rounded-2xl"
+        />
+        <img
+          src="https://source.unsplash.com/r01ZopTiEV8"
+          class="object-contain h-52 w-full p-1 rounded-2xl"
+        />
+        <img
+          src="https://source.unsplash.com/P_z_xlMGuEk"
+          class="object-contain h-52 w-full p-1 rounded-2xl"
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-wrap my-4 mx-6">
+      <h1 class="text-3xl p-4 w-full">Best Food to order</h1>
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/XNzYljXGsw4"
+            class="h-56 w-full object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Curry with rice</h1>
+
+            <p class="text-gray-500 text-xl">Rs. 400 for one platter</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/M-yrBvxj4lM"
+            class="h-56 w-full object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Indian Snack</h1>
+
+            <p class="text-xl text-gray-500">Rs. 250 for one platter</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/1keEJmqm8vU"
+            class="w-full h-56 object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Biryani</h1>
+            <p></p>
+            <p class="text-xl text-gray-500">Rs. 300 for one platter</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/pe9dvM1rQkM"
+            class="w-full h-56 object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Steak and fries</h1>
+            <p></p>
+            <p class="text-xl text-gray-500">Rs. 700 for one platter</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/IGfIGP5ONV0"
+            class="w-full h-56 object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Salad</h1>
+            <p></p>
+            <p class="text-xl text-gray-500">Rs. 500 for one platter</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 w-1/3 hover:shadow-2xl">
+        <div
+          class="
+            h-full
+            border-2 border-gray-200 border-opacity-60
+            rounded-lg
+            overflow-hidden
+          "
+        >
+          <img
+            src="https://source.unsplash.com/xmuIgjuQG0M"
+            class="w-full h-56 object-cover object-center"
+          />
+          <div class="p-1">
+            <h1 class="text-2xl font-semibold mb-1">Rice and beans</h1>
+            <p></p>
+            <p class="text-xl text-gray-500">Rs. 100 for one platter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-6">
+      <h1 class="text-3xl p-2">Popular Restaurant Types</h1>
+
+      <div class="flex container justify-around text-gray-500 m-4 text-lg">
+        <ul class="list-disc flex flex-wrap font-light">
+          <li class="mx-4"><a>Bakeries near me</a></li>
+          <li class="mx-4"><a>Dessert centres near me</a></li>
+          <li class="mx-4"><a>Food court near me</a></li>
+          <li class="mx-4"><a>Dhabas near me</a></li>
+          <li class="mx-4"><a>Irani cafes near me</a></li>
+          <li class="mx-4"><a>Bars near me</a></li>
+          <li class="mx-4"><a>Cafes near me</a></li>
+          <li class="mx-4"><a>Confectioneries near me</a></li>
+          <li class="mx-4"><a>Pan shops near me</a></li>
+          <li class="mx-4"><a>Sweet shops near me</a></li>
+          <li class="mx-4"><a>Meat shops near me</a></li>
+          <li class="mx-4"><a>Beverage shops near me</a></li>
+          <li class="mx-4"><a>Biryani food near me</a></li>
+          <li class="mx-4"><a>Burger Food near me</a></li>
+          <li class="mx-4"><a>Chinese food near me</a></li>
+          <li class="mx-4"><a>Burger food near me</a></li>
+          <li class="mx-4"><a>Continental food near me</a></li>
+          <li class="mx-4"><a>Ice cream parlour near me</a></li>
+          <li class="mx-4"><a>Malwani food near me</a></li>
+          <li class="mx-4"><a>Mughlai kitchens near me</a></li>
+          <li class="mx-4"><a>South India cuisine near me</a></li>
+          <li class="mx-4"><a>Street food near me</a></li>
+          <li class="mx-4"><a>Pizza house near me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-2xl font-bold w-full p-4">About Us</h1>
+      <div class="flex justify-around">
+        <div class="flex flex-col ml-3">
+          <h2 class="text-xl">Company</h2>
+          <ul>
+            <li><a href="#">who we are</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Report Fraud</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Financial Information</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col">
+          <h1 class="text-xl">For Foodies</h1>
+          <ul>
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Blogger Help</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-xl">For Restaurant</h1>
+          <ul>
+            <li><a href="#">Add Restaurant</a></li>
+            <li><a href="#">Claim your Listing</a></li>
+            <li><a href="#">Business App</a></li>
+            <li><a href="#">Restaurant Widget</a></li>
+            <li><a href="#">Products for Business</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-xl">For you</h1>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
